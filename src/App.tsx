@@ -1,33 +1,21 @@
-import { useReducer } from "react";
+import { useRef } from "react";
+import Input from "./components/Input";
 import "./App.css";
 
-type ActionsTypes = "SUM" | "SUB" | "MULT";
-
-function counterReducer(state: number, action: { type: ActionsTypes }) {
-  const actions = {
-    SUM: state + 1,
-    SUB: state - 1,
-    MULT: state * 10,
-  };
-
-  return actions[action.type];
-}
-
 function App() {
-  const [counter, dispatchCounter] = useReducer(counterReducer, 0);
+  const ref = useRef<HTMLInputElement>(null);
 
+  function onFocus() {
+    ref.current?.focus();
+  }
   return (
-    <div className="App" style={{ paddingTop: 20 }}>
-      <button onClick={() => dispatchCounter({ type: "SUM" })}>
-        Increment 1
-      </button>
-      <button onClick={() => dispatchCounter({ type: "SUB" })}>
-        Decrement 1
-      </button>
-      <button onClick={() => dispatchCounter({ type: "MULT" })}>
-        Multiple by 10
-      </button>
-      <p>Result: {counter}</p>
+    <div
+      className="app"
+      style={{ paddingTop: 20, display: "flex", flexDirection: "column" }}
+    >
+      <p>Input Ref and Imperative Handler</p>
+      <Input ref={ref} />
+      <button onClick={onFocus}>On Focus (Verify Console)</button>
     </div>
   );
 }
