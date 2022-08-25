@@ -58,7 +58,9 @@ $ yarn install
 $ yarn start
 ```
 
-## :file: Documentation
+## 📁 Documentation
+I also wrote a full documentation and explanation of this hooks. Enojy it! 
+
 [PORTUGUESE 🇧🇷](https://www.notion.so/glauberbrack/React-Hooks-4b403873dacd4e36870c647eeacd6f3e)
 
 ---
