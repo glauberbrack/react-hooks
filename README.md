@@ -18,7 +18,8 @@
 <p align="center" style="width: 100%; display: flex; flex-direction: row; justify-content: center; margin: 20px 0;">
   <a href="#rocket-techs" style="margin: 0 10px">Description</a> |
   <a href="#rocket-techs" style="margin: 0 10px">Hooks</a> |
-  <a href="#notebook-running"style="margin: 0 10px">Runnin</a>
+  <a href="#notebook-running"style="margin: 0 10px">Documentation</a>|
+  <a href="#notebook-running"style="margin: 0 10px">Running</a>
 </p>
 <br>
 
@@ -32,28 +33,32 @@ Sup, there! I work as a React developer for a long long time and I want to help 
 - [useEffect](https://github.com/glauberbrack/react-hooks/tree/feat/use-effect)
 - [useLayoutEffect](https://github.com/glauberbrack/react-hooks/tree/feat/use-effect)
 - [useRef](https://github.com/glauberbrack/react-hooks/tree/feat/use-ref)
-- [useImperativeHandle & fowardRef]()
-- [useMemo & useCallback](https://github.com/glauberbrack/react-hooks/tree/feat/use-callback)
-- [Custom Hooks]()
-- [useDebugValue]()
-- [useDeferredValue]()
-- [useTransition]()
-
+- [useImperativeHandle & fowardRef](https://github.com/glauberbrack/react-hooks/commit/1a43b87004e8c84d570e9fb5b32ce3e4a3ea223c)
+- [useMemo](https://github.com/glauberbrack/react-hooks/blob/1aca291f6e37735ec3dcd0f6641818bd58f23d63/src/App.tsx)
+- [useCallback](https://github.com/glauberbrack/react-hooks/tree/feat/use-callback)
+- [useReducer](https://github.com/glauberbrack/react-hooks/commit/3704fbf59fbf87d205ac2f33ea5a43ea969dad62)
+- [Custom Hooks](https://github.com/glauberbrack/react-hooks/commit/65219c8924d6457b774b73fecc46f735a26aaa13)
+- [useDebugValue](https://github.com/glauberbrack/react-hooks/commit/65219c8924d6457b774b73fecc46f735a26aaa13)
+- [useDeferredValue](https://github.com/glauberbrack/react-hooks/commit/3759c8b65b843e6671be9ac80bd272bdd72264f7)
+- [useTransition](https://github.com/glauberbrack/react-hooks/tree/feat/use-transition)
 
 ## :notebook: Running
 
 ```bash
-# Faça o clone
+# Clone the project
 $ git clone https://github.com/glauberbrack/react-hooks
 
-# Navegue até a pasta do projeto
+# Go to the folder
 $ cd react-hooks
 
-# Instale as dependências
+# Install all the depencies
 $ yarn install
 
-# Execute o projeto
+# Run the project
 $ yarn start
 ```
+
+## :file: Documentation
+[PORTUGUESE 🇧🇷](https://www.notion.so/glauberbrack/React-Hooks-4b403873dacd4e36870c647eeacd6f3e)
 
 ---
