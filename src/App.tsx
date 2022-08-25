@@ -1,21 +1,15 @@
-import { useRef } from "react";
-import Input from "./components/Input";
+import useRequest from "./hooks/useRequest";
 import "./App.css";
 
 function App() {
-  const ref = useRef<HTMLInputElement>(null);
-
-  function onFocus() {
-    ref.current?.focus();
-  }
+  const { data } = useRequest(`https://api.github.com/users/glauberbrack`);
+  console.log(data);
   return (
     <div
       className="app"
       style={{ paddingTop: 20, display: "flex", flexDirection: "column" }}
     >
-      <p>Input Ref and Imperative Handler</p>
-      <Input ref={ref} />
-      <button onClick={onFocus}>On Focus (Verify Console)</button>
+      <h4>Get user data (Verify console)</h4>
     </div>
   );
 }
