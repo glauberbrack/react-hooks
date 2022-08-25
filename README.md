@@ -24,7 +24,7 @@
 <br>
 
 ## :book: Description
-Sup, there! I work as a React developer for a long long time and I want to help you to undestand the concepts of the React Hooks, that still a mistery for new developers. Check this out!  
+Sup, there! I have been working as a React developer for a long long time and I want to help you undestand the concepts of the React Hooks, which still a mistery to new developers. Check it out!  
 
 
 ## :rocket: Hooks
@@ -59,7 +59,7 @@ $ yarn start
 ```
 
 ## 📁 Documentation
-I also wrote a full documentation and explanation of this hooks. Enojy it! 
+I also wrote a full documentation and explanation of those Hooks on Notion. Enjoy it!
 
 [PORTUGUESE 🇧🇷](https://www.notion.so/glauberbrack/React-Hooks-4b403873dacd4e36870c647eeacd6f3e)
 
