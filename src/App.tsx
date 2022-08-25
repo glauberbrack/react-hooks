@@ -1,15 +1,21 @@
-import useRequest from "./hooks/useRequest";
+import { useState } from "react";
+import List from "./components/List";
 import "./App.css";
 
 function App() {
-  const { data } = useRequest(`https://api.github.com/users/glauberbrack`);
-  console.log(data);
+  const [input, setInput] = useState<string>("");
+
   return (
     <div
       className="app"
-      style={{ paddingTop: 20, display: "flex", flexDirection: "column" }}
+      style={{ padding: 20, display: "flex", flexDirection: "column" }}
     >
-      <h4>Get user data (Verify console)</h4>
+      <h4>useDeffered</h4>
+      <input
+        style={{ width: 200 }}
+        onChange={(event) => setInput(event.target.value)}
+      />
+      <List input={input} />
     </div>
   );
 }
